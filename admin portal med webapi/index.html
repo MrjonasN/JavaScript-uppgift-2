@@ -24,6 +24,7 @@
                 <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"
                   aria-labelledby="messageDropdown" id="message-dropdown">
                   <p class="mb-0 font-weight-normal float-left dropdown-header">Messages</p>
+                  <!-- data from script.js -->
                 </div>
               </li>
               <li class="nav-item dropdown mr-4">
@@ -35,6 +36,7 @@
                 <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"
                   aria-labelledby="notificationDropdown" id="notification-dropdown">
                   <p class="mb-0 font-weight-normal float-left dropdown-header">Notifications</p>
+                  <!-- data from script.js -->
                 </div>
               </li>
               <li class="nav-item nav-profile dropdown mr-0 mr-sm-2">
@@ -83,9 +85,13 @@
                     <div class="card-body">
                       <p class="card-title">Users</p>
                       <div class="d-flex flex-wrap align-items-baseline">
-                        <h2 class="mr-3">33,956</h2>
+                        <h2 class="mr-3" id="user-count">
+                          <!-- data from script.js -->
+                        </h2>
                         <i class="mdi mdi-arrow-up mr-1 text-danger"></i><span>
-                          <p class="mb-0 text-danger font-weight-medium">+2.12%</p>
+                          <p class="mb-0 text-danger font-weight-medium" id="user-growth">
+                            <!-- data from script.js -->
+                          </p>
                         </span>
                       </div>
                       <p class="mb-0 text-muted">Total users world wide</p>
@@ -98,9 +104,13 @@
                     <div class="card-body">
                       <p class="card-title">Projects</p>
                       <div class="d-flex flex-wrap align-items-baseline">
-                        <h2 class="mr-3">50.36%</h2>
+                        <h2 class="mr-3" id="project-count">
+                          <!-- data from script.js -->
+                        </h2>
                         <i class="mdi mdi-arrow-up mr-1 text-success"></i><span>
-                          <p class="mb-0 text-success font-weight-medium">+9.12%</p>
+                          <p class="mb-0 text-success font-weight-medium" id="project-growth">
+                            <!-- data from script.js -->
+                          </p>
                         </span>
                       </div>
                       <p class="mb-0 text-muted">Total users world wide</p>
@@ -124,7 +134,9 @@
                             </div>
                             <div class="col-6 pl-0">
                               <p class="mb-0">Offline</p>
-                              <h2>45,324</h2>
+                              <h2 id="offline-data">
+                                <!-- data from script.js -->
+                              </h2>
                             </div>
                           </div>
                         </div>
@@ -135,7 +147,9 @@
                             </div>
                             <div class="col-6 pl-0">
                               <p class="mb-0">Online</p>
-                              <h2>12,236</h2>
+                              <h2 id="online-data">
+                                <!-- data from script.js -->
+                              </h2>
                             </div>
                           </div>
                         </div>
@@ -155,22 +169,32 @@
                   <div class="d-flex flex-wrap mb-4 mt-4 pb-4">
                     <div class="mr-4 mr-md-5">
                       <p class="mb-0">Revenue</p>
-                      <h4>13,956</h4>
+                      <h4 id="ts-revenue">
+                        <!-- data from script.js -->
+                      </h4>
                     </div>
                     <div class="mr-4 mr-md-5">
                       <p class="mb-0">Returns</p>
-                      <h4>27,219</h4>
+                      <h4 id="ts-returns">
+                        <!-- data from script.js -->
+                      </h4>
                     </div>
                     <div class="mr-4 mr-md-5">
                       <p class="mb-0">Queries</p>
-                      <h4>03,386</h4>
+                      <h4 id="ts-queries">
+                        <!-- data from script.js -->
+                      </h4>
                     </div>
                     <div class="mr-4 mr-md-5">
                       <p class="mb-0">Invoices</p>
-                      <h4>04,739</h4>
+                      <h4 id="ts-invoices">
+                        <!-- data from script.js -->
+                      </h4>
                     </div>
                   </div>
-                  <canvas id="total-sales-chart"></canvas>
+                  <canvas id="total-sales-chart">
+                    <!-- data from script.js -->
+                  </canvas>
                 </div>
               </div>
             </div>
@@ -206,7 +230,9 @@
                       <p class="font-weight-medium mt-md-2 mt-xl-0 text-md-center text-xl-left">Total Purchases</p>
                       <div
                         class="d-flex flex-md-column flex-xl-row flex-wrap align-items-baseline align-items-md-center align-items-xl-baseline">
-                        <h3 class="mb-0 mb-md-1 mb-lg-0 mr-1" id="total-purchases"></h3>
+                        <h3 class="mb-0 mb-md-1 mb-lg-0 mr-1" id="total-purchases">
+                          <!-- data from script.js -->
+                        </h3>
                         <small class="mb-0">This month</small>
                       </div>
                     </div>
@@ -225,7 +251,9 @@
                       <p class="font-weight-medium mt-md-2 mt-xl-0 text-md-center text-xl-left">Total Orders</p>
                       <div
                         class="d-flex flex-md-column flex-xl-row flex-wrap align-items-baseline align-items-md-center align-items-xl-baseline">
-                        <h3 class="mb-0 mb-md-1 mb-lg-0 mr-1" id="total-orders"></h3>
+                        <h3 class="mb-0 mb-md-1 mb-lg-0 mr-1" id="total-orders">
+                          <!-- data from script.js -->
+                        </h3>
                         <small class="mb-0">This month</small>
                       </div>
                     </div>
@@ -244,7 +272,9 @@
                       <p class="font-weight-medium mt-md-2 mt-xl-0 text-md-center text-xl-left">Total Growth</p>
                       <div
                         class="d-flex flex-md-column flex-xl-row flex-wrap align-items-baseline align-items-md-center align-items-xl-baseline">
-                        <h3 class="mb-0 mb-md-1 mb-lg-0 mr-1" id="total-growth"></h3>
+                        <h3 class="mb-0 mb-md-1 mb-lg-0 mr-1" id="total-growth">
+                          <!-- data from script.js -->
+                        </h3>
                         <small class="mb-0">This month</small>
                       </div>
                     </div>
@@ -286,117 +316,8 @@
                           Projects
                         </th>
                       </thead>
-                      <tbody>
-                        <tr>
-                          <td class="pl-0">
-                            <div class="icon-rounded-primary icon-rounded-md">
-                              <h4 class="font-weight-medium">AL</h4>
-                            </div>
-                          </td>
-                          <td>
-                            <p class="mb-0">Alta Lucas</p>
-                            <p class="text-muted mb-0">Connecticut</p>
-                          </td>
-                          <td>
-                            <p class="mb-0">31 Aug 2018</p>
-                            <p class="text-muted mb-0">9:30 am</p>
-                          </td>
-                          <td>
-                            <p class="mb-0">6770 Verner Burgs</p>
-                            <p class="text-muted mb-0">View on map</p>
-                          </td>
-                          <td class="pr-0">
-                            <i class="mdi mdi-dots-horizontal icon-sm cursor-pointer"></i>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="pl-0">
-                            <div class="icon-rounded-info icon-rounded-md">
-                              <h4 class="font-weight-medium">TS</h4>
-                            </div>
-                          </td>
-                          <td>
-                            <p class="mb-0">Teresa Shaw</p>
-                            <p class="text-muted mb-0">Florida</p>
-                          </td>
-                          <td>
-                            <p class="mb-0">13 May 2018</p>
-                            <p class="text-muted mb-0">10:30 am</p>
-                          </td>
-                          <td>
-                            <p class="mb-0">1300 Gideon Divide Apt. 400</p>
-                            <p class="text-muted mb-0">Start session</p>
-                          </td>
-                          <td class="pr-0">
-                            <i class="mdi mdi-dots-horizontal icon-sm cursor-pointer"></i>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="pl-0">
-                            <div class="icon-rounded-danger icon-rounded-md">
-                              <h4 class="font-weight-medium">RU</h4>
-                            </div>
-                          </td>
-                          <td>
-                            <p class="mb-0">Rosa Underwood</p>
-                            <p class="text-muted mb-0">North Dakota</p>
-                          </td>
-                          <td>
-                            <p class="mb-0">02 Jan 2018</p>
-                            <p class="text-muted mb-0">11:00 am</p>
-                          </td>
-                          <td>
-                            <p class="mb-0">9576 Rempel Extension</p>
-                            <p class="text-muted mb-0">End session</p>
-                          </td>
-                          <td class="pr-0">
-                            <i class="mdi mdi-dots-horizontal icon-sm cursor-pointer"></i>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="pl-0">
-                            <div class="icon-rounded-warning icon-rounded-md">
-                              <h4 class="font-weight-medium">VR</h4>
-                            </div>
-                          </td>
-                          <td>
-                            <p class="mb-0">Vilson Rowa</p>
-                            <p class="text-muted mb-0">Densar</p>
-                          </td>
-                          <td>
-                            <p class="mb-0">05 Nov 2018</p>
-                            <p class="text-muted mb-0">02:30 am</p>
-                          </td>
-                          <td>
-                            <p class="mb-0">1072 Orion Expansion</p>
-                            <p class="text-muted mb-0">On Way</p>
-                          </td>
-                          <td class="pr-0">
-                            <i class="mdi mdi-dots-horizontal icon-sm cursor-pointer"></i>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="pl-0">
-                            <div class="icon-rounded-info icon-rounded-md">
-                              <h4 class="font-weight-medium">TS</h4>
-                            </div>
-                          </td>
-                          <td>
-                            <p class="mb-0">Teresa Shaw</p>
-                            <p class="text-muted mb-0">Florida</p>
-                          </td>
-                          <td>
-                            <p class="mb-0">13 May 2018</p>
-                            <p class="text-muted mb-0">10:30 am</p>
-                          </td>
-                          <td>
-                            <p class="mb-0">1300 Gideon Divide Apt. 400</p>
-                            <p class="text-muted mb-0">Start session</p>
-                          </td>
-                          <td class="pr-0">
-                            <i class="mdi mdi-dots-horizontal icon-sm cursor-pointer"></i>
-                          </td>
-                        </tr>
+                      <tbody id="get-tickets">
+                        <!-- data from script.js -->
                       </tbody>
                     </table>
                   </div>
@@ -405,37 +326,9 @@
             </div>
             <div class="col-xl-4 grid-margin stretch-card">
               <div class="card">
-                <div class="card-body">
+                <div class="card-body" id="get-updates">
                   <p class="card-title">Updates</p>
-                  <ul class="bullet-line-list mt-4">
-                    <li>
-                      <h6>User confirmation</h6>
-                      <p class="mt-2">Tonight's the night. And it's going to happen again and again. It has to happen.
-                        I'm thinking two circus clowns dancing. </p>
-                      <p class="text-muted mb-4">
-                        <i class="mdi mdi-clock-outline"></i>
-                        7 months ago.
-                      </p>
-                    </li>
-                    <li>
-                      <h6>Continuous evaluation</h6>
-                      <p class="mt-2">And it's going to happen again and again. It has to happen. I'm thinking two
-                        circus clowns dancing. Tonight's the night. </p>
-                      <p class="text-muted mb-4">
-                        <i class="mdi mdi-clock-outline"></i>
-                        7 months ago.
-                      </p>
-                    </li>
-                    <li>
-                      <h6>Promotion</h6>
-                      <p class="mt-2">It has to happen. I'm thinking two circus clowns dancing. Tonight's the night.
-                      </p>
-                      <p class="text-muted">
-                        <i class="mdi mdi-clock-outline"></i>
-                        7 months ago.
-                      </p>
-                    </li>
-                  </ul>
+                  <!-- data from script.js -->
                 </div>
               </div>
             </div>
@@ -472,20 +365,28 @@
                       <div class="d-flex flex-wrap justify-content-start mt-3 mr-4">
                         <div class="mr-3">
                           <p class="mb-0">Downloads</p>
-                          <h4>13,956</h4>
+                          <h4 id="sro-downloads">
+                            <!-- data from script.js -->
+                          </h4>
                         </div>
                         <div class="mr-3">
                           <p class="mb-0">Purchases</p>
-                          <h4>55,123</h4>
+                          <h4 id="sro-purchases">
+                            <!-- data from script.js -->
+                          </h4>
                         </div>
                         <div class="mr-3">
                           <p class="mb-0">Users</p>
-                          <h4>29829</h4>
+                          <h4 id="sro-users">
+                            <!-- data from script.js -->
+                          </h4>
                         </div>
                       </div>
                       <div class="d-flex mb-3">
                         <i class="mdi mdi-arrow-expand-up mb-0 text-success mr-2 mt-1"></i>
-                        <p class="mb-0 text-dark">15% more than last week</p>
+                        <p class="mb-0 text-dark" id="sro-growth">
+                          <!-- data from script.js -->
+                        </p>
                       </div>
                       <div class="d-flex flex-wrap mb-5">
                         <button class="btn btn-info mt-3 mr-2">Update</button>
@@ -522,67 +423,8 @@
                           <th class="text-muted">Status</th>
                         </tr>
                       </thead>
-                      <tbody>
-                        <tr>
-                          <td>50014</td>
-                          <td>David Grey</td>
-                          <td>Italy</td>
-                          <td class="font-weight-bold">$6300</td>
-                          <td>$2100</td>
-                          <td>
-                            <div class="badge badge-success badge-fw">Progress</div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>50015</td>
-                          <td>Stella Johnson</td>
-                          <td>Brazil</td>
-                          <td class="font-weight-bold">$4500</td>
-                          <td>$4300</td>
-                          <td>
-                            <div class="badge badge-warning badge-fw">Open</div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>50016</td>
-                          <td>Marina Michel</td>
-                          <td>Japan</td>
-                          <td class="font-weight-bold">$4300</td>
-                          <td>$6440</td>
-                          <td>
-                            <div class="badge badge-danger badge-fw">On hold</div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>50017</td>
-                          <td>John Doe</td>
-                          <td>India</td>
-                          <td class="font-weight-bold">$6400</td>
-                          <td>$2200</td>
-                          <td>
-                            <div class="badge badge-success badge-fw">Progress</div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>50015</td>
-                          <td>Stella Johnson</td>
-                          <td>Brazil</td>
-                          <td class="font-weight-bold">$4500</td>
-                          <td>$4300</td>
-                          <td>
-                            <div class="badge badge-warning badge-fw">Open</div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>50014</td>
-                          <td>David Grey</td>
-                          <td>Italy</td>
-                          <td class="font-weight-bold">$6300</td>
-                          <td>$2100</td>
-                          <td>
-                            <div class="badge badge-success badge-fw">Progress</div>
-                          </td>
-                        </tr>
+                      <tbody id="get-openinvoices">
+                        <!-- data from script.js -->
                       </tbody>
                     </table>
                   </div>
