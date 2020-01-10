@@ -1,7 +1,6 @@
 $(function () {
 
-  // VARIABLES //
-
+  // --- VARIABLES --- //
   // navbar section
   const messages = document.getElementById('message-dropdown')
   const notification = document.getElementById('notification-dropdown')
@@ -35,7 +34,8 @@ $(function () {
   // open invoices section
   const openInvoices = document.getElementById('get-openinvoices');
 
-  // URLS //
+
+  // --- URLS --- //
   const urlMessages = 'https://inlupp-fa.azurewebsites.net/api/messages';
   const urlNotifications = 'https://inlupp-fa.azurewebsites.net/api/notifications';
   const urlTotalSales = 'https://inlupp-fa.azurewebsites.net/api/total-sales';
@@ -53,8 +53,8 @@ $(function () {
   const urlOpenInvoices = 'https://inlupp-fa.azurewebsites.net/api/open-invoices';
 
 
-  // FUNCTIONS //
-
+  // --- FUNCTIONS --- //
+  
   // NUMBER FORMATING //
   function formatNumber(num) {
     return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')
@@ -526,7 +526,6 @@ $(function () {
 
   // GET TOTAL STATS //
   function getTotalStat() {
-
     fetch(urlTotalSales)
       .then(res => res.json())
       .then(data => {
